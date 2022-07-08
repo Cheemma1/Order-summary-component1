@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%) ;
+--Very-pale-blue: hsl(225, 100%, 98%); 
+ --Desaturated-blue: hsl(224, 23%, 55%) ;
+ --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color:var(--Pale-blue);
+    min-height: 100vh;
+}
+
+.bg-img{
+    background: url(images/pattern-background-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.container{
+    text-align: center;
+  width: 375px;
+  margin: 70px auto;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px  hsl(228, 45%, 44%) 0.15;
+
+}
+
+ img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+h2{
+    margin-top: 20px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+p{
+    line-height: 1.6;
+    font-size: 16px;
+    color:var(--Desaturated-blue) ;
+}
+.container .price{ 
+    margin: 20px auto;
+    background-color:var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.price2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price2 .svg{
+    margin-right: 10px;
+}
+
+.btn-change{
+    background: transparent;
+    text-decoration: underline;
+    color:var(--Bright-blue);
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-hero{
+    box-sizing: border-box;
+    background-color:var(--Bright-blue);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 50px;
+    border: none;
+    margin-bottom: 20px;
+    font-family: "Red Hat Display";
+}
+.btn-cancel{
+    border: none;
+    background: transparent;
+    color: var(--Desaturated-blue);
+    padding-bottom: 5px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
